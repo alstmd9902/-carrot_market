@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./pc.css">
+  </head>
+  <body>
+    <!-- header 영역 -->
+    <header>
+      <div class="header_wrap">
+        <div class="header_top">
+        <a href="">
+          <img class="main_logo" src="./img/logo.svg" alt="logo" />
+        </a>
+        <nav >
+          <div>
+            <ul class="nav_list">
+              <li><a href="">중고거래</a></li>
+              <li><a href="">부동산</a></li>
+              <li><a href="">중고차</a></li>
+              <li><a href="">
+                <button>알바
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-seed-icon="true" data-seed-icon-version="0.4.0-beta.2" width="24" height="24" aria-hidden="true"  style="width:12px;height:12px"><g><path fill-rule="evenodd" clip-rule="evenodd" d="M2.79289 7.29289C3.18342 6.90237 3.81658 6.90237 4.20711 7.29289L12 15.0858L19.7929 7.29289C20.1834 6.90237 20.8166 6.90237 21.2071 7.29289C21.5976 7.68342 21.5976 8.31658 21.2071 8.70711L12.7071 17.2071C12.3166 17.5976 11.6834 17.5976 11.2929 17.2071L2.79289 8.70711C2.40237 8.31658 2.40237 7.68342 2.79289 7.29289Z" fill="currentColor"></path></g></svg>
+              </button></a></li>
+
+              <li><a href="">동네업체</a></li>
+              <li><a href="">동네생활</a></li>
+              <li><a href="">모임</a></li>
+            </ul>
+          </div>
+        </nav>
+        <button class="app_button">
+          앱 다운로드
+        </button>
+      </div>
+        <div class="header_content">
+          <button class="btn">
+            <span class="location_span">
+              <svg
+                id="icon_location_fill"
+                width="100%"
+                height="100%"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                data-karrot-ui-icon="true"
+              >
+                <g>
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M2.19995 10.5798C2.19995 5.16739 6.58756 0.779785 12 0.779785C17.4123 0.779785 21.8 5.16739 21.8 10.5798C21.8 13.9799 19.5985 17.1391 17.4217 19.3764C16.3174 20.5113 15.1817 21.4481 14.2536 22.1055C13.7903 22.4337 13.3694 22.6988 13.0225 22.8857C12.8498 22.9788 12.6843 23.0584 12.5339 23.1169C12.4059 23.1666 12.2081 23.2342 12 23.2342C11.7918 23.2342 11.594 23.1666 11.466 23.1169C11.3156 23.0584 11.1501 22.9788 10.9774 22.8857C10.6305 22.6988 10.2096 22.4337 9.74627 22.1055C8.81823 21.4481 7.68247 20.5113 6.57819 19.3764C4.40138 17.1391 2.19995 13.9799 2.19995 10.5798ZM8.38442 10.1041C8.38442 8.10725 10.0031 6.48852 12 6.48852C13.9968 6.48852 15.6155 8.10725 15.6155 10.1041C15.6155 12.1009 13.9968 13.7196 12 13.7196C10.0031 13.7196 8.38442 12.1009 8.38442 10.1041Z"
+                    fill="currentColor"
+                  ></path>
+                </g>
+              </svg>
+            </span>
+            용산구
+            <span>
+              <svg id="icon_expand_more_fill" width="100%" height="100%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-karrot-ui-icon="true"><g><path fill-rule="evenodd" clip-rule="evenodd" d="M2.79289 7.29289C3.18342 6.90237 3.81658 6.90237 4.20711 7.29289L12 15.0858L19.7929 7.29289C20.1834 6.90237 20.8166 6.90237 21.2071 7.29289C21.5976 7.68342 21.5976 8.31658 21.2071 8.70711L12.7071 17.2071C12.3166 17.5976 11.6834 17.5976 11.2929 17.2071L2.79289 8.70711C2.40237 8.31658 2.40237 7.68342 2.79289 7.29289Z" fill="currentColor">
+              </path></g>
+              </svg>
+            </span>
+          </button>
+          <div class="menu">
+            <img src="./img/menu-bar.png" alt="메뉴바" />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- search_input -->
+    <div class="form_wrap">
+        <div class="botn_wrap">
+          <button class="btn">
+            <span class="location_span">
+              <svg
+                id="icon_location_fill"
+                width="100%"
+                height="100%"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                data-karrot-ui-icon="true"
+              >
+                <g>
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M2.19995 10.5798C2.19995 5.16739 6.58756 0.779785 12 0.779785C17.4123 0.779785 21.8 5.16739 21.8 10.5798C21.8 13.9799 19.5985 17.1391 17.4217 19.3764C16.3174 20.5113 15.1817 21.4481 14.2536 22.1055C13.7903 22.4337 13.3694 22.6988 13.0225 22.8857C12.8498 22.9788 12.6843 23.0584 12.5339 23.1169C12.4059 23.1666 12.2081 23.2342 12 23.2342C11.7918 23.2342 11.594 23.1666 11.466 23.1169C11.3156 23.0584 11.1501 22.9788 10.9774 22.8857C10.6305 22.6988 10.2096 22.4337 9.74627 22.1055C8.81823 21.4481 7.68247 20.5113 6.57819 19.3764C4.40138 17.1391 2.19995 13.9799 2.19995 10.5798ZM8.38442 10.1041C8.38442 8.10725 10.0031 6.48852 12 6.48852C13.9968 6.48852 15.6155 8.10725 15.6155 10.1041C15.6155 12.1009 13.9968 13.7196 12 13.7196C10.0031 13.7196 8.38442 12.1009 8.38442 10.1041Z"
+                    fill="currentColor"
+                  ></path>
+                </g>
+              </svg>
+            </span>
+            용산구
+            <span class="arrow_span">
+              <svg id="icon_expand_more_fill" width="100%" height="100%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-karrot-ui-icon="true"><g><path fill-rule="evenodd" clip-rule="evenodd" d="M2.79289 7.29289C3.18342 6.90237 3.81658 6.90237 4.20711 7.29289L12 15.0858L19.7929 7.29289C20.1834 6.90237 20.8166 6.90237 21.2071 7.29289C21.5976 7.68342 21.5976 8.31658 21.2071 8.70711L12.7071 17.2071C12.3166 17.5976 11.6834 17.5976 11.2929 17.2071L2.79289 8.70711C2.40237 8.31658 2.40237 7.68342 2.79289 7.29289Z" fill="currentColor">
+              </path></g>
+              </svg>
+            </span>
+          </div>
+    <div class="header_inner">
+      <form class="search-form">
+        <button class="search_btn">
+          <div class="search-btn_wrap">
+            중고거래
+            <img class="arrow2" src="./img/down-arrow.png" alt="" />
+          </div>
+        </button>
+        <div class="input_wrap">
+          <input
+            type="text"
+            class="search-input"
+            placeholder="검색어를 입력하세요"
+          />
+          <button type="submit" class="search-btn">
+            <img
+              class="search-img"
+              src="./img/search-interface-symbol.png"
+              alt="검색"
+            />
+          </button>
+        </div>
+      </form> 
+      <!-- list 영역 -->
+      <div class="header_list">
+        <ul class="list_text">
+          <li><a href="">아이폰</a></li>
+          <li><a href="">의자</a></li>
+          <li><a href="">자전거</a></li>
+          <li><a href="">컴퓨터</a></li>
+          <li><a href="">책상</a></li>
+          <li><a href="">소파</a></li>
+          <li><a href="">원피스</a></li>
+          <li><a href="">전기자전거</a></li>
+          <li><a href="">식탁</a></li>
+          <li><a href="">모니터</a></li>
+        </ul>
+      </div>
+
+      <div class="header_list_pc">
+        <ul class="list_text_pc">
+          <li class="a"><a href="" class="a_1">인기 검색어</a></li>
+          <li><a href="">아이폰</a></li>
+          <li><a href="">의자</a></li>
+          <li><a href="">자전거</a></li>
+          <li><a href="">컴퓨터</a></li>
+          <li><a href="">책상</a></li>
+          <li><a href="">소파</a></li>
+          <li><a href="">원피스</a></li>
+          <li><a href="">전기자전거</a></li>
+          <li><a href="">식탁</a></li>
+          <li><a href="">모니터</a></li>
+        </ul>
+      </div>
+    </div>
+  </div> 
+</div>
+
+    <!-- main 영역 -->
+    <main class="main_content_box">
+      <div class="main_content_wrap">
+        <div class="img_relative">
+          <span>
+            <img
+              class="main_img"
+              src="https://karrotmarket-com-sanity-cdn.krrt.io/production/56e986c736d6e4f5526448a7a408a0b8f370394e-1125x930.png"
+              alt="1"
+              srcset="
+                https://karrotmarket-com-sanity-cdn.krrt.io/production/56e986c736d6e4f5526448a7a408a0b8f370394e-1125x930.png?q=82&amp;w=768    576w,
+                https://karrotmarket-com-sanity-cdn.krrt.io/production/56e986c736d6e4f5526448a7a408a0b8f370394e-1125x930.png?q=95&amp;w=1200  1200w,
+                https://karrotmarket-com-sanity-cdn.krrt.io/production/56e986c736d6e4f5526448a7a408a0b8f370394e-1125x930.png?q=100&amp;w=1400 1400w
+              "
+              sizes="(min-width:1200px) 1400px, (min-width:992px) 1200px, 576px"
+            />
+            <img src="https://karrotmarket-com-sanity-cdn.krrt.io/production/d70a35991a08f5de97a7ef221e79ab24a4bf175f-2304x1081.png" alt="1" class="tablet_img" srcset="https://karrotmarket-com-sanity-cdn.krrt.io/production/d70a35991a08f5de97a7ef221e79ab24a4bf175f-2304x1081.png?q=82&amp;w=768 576w, https://karrotmarket-com-sanity-cdn.krrt.io/production/d70a35991a08f5de97a7ef221e79ab24a4bf175f-2304x1081.png?q=95&amp;w=1200 1200w, https://karrotmarket-com-sanity-cdn.krrt.io/production/d70a35991a08f5de97a7ef221e79ab24a4bf175f-2304x1081.png?q=100&amp;w=1400 1400w" sizes="(min-width:1200px) 1400px, (min-width:992px) 1200px, 576px">
+            <img src="https://karrotmarket-com-sanity-cdn.krrt.io/production/7f723e50597579f43439a018b1f2c7002e44a1b6-2976x1200.png" alt="1" class="pc_img" srcset="https://karrotmarket-com-sanity-cdn.krrt.io/production/7f723e50597579f43439a018b1f2c7002e44a1b6-2976x1200.png?q=82&amp;w=768 576w, https://karrotmarket-com-sanity-cdn.krrt.io/production/7f723e50597579f43439a018b1f2c7002e44a1b6-2976x1200.png?q=95&amp;w=1200 1200w, https://karrotmarket-com-sanity-cdn.krrt.io/production/7f723e50597579f43439a018b1f2c7002e44a1b6-2976x1200.png?q=100&amp;w=1400 1400w" sizes="(min-width:1200px) 1400px, (min-width:992px) 1200px, 576px">
+          </span>
+          <div class="main_title_wrap">
+            <h1 class="main_title">믿을만한<br />이웃 간 중고거래</h1>
+            <span class="main_small_text">동네 주민들과 가깝고따뜻한 거래를<br>지금 경험해보세요.</span>
+          </div>
+          <div class="img_slide_list">
+            <span class="button_color"></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        
+        <!-- 이미지 넘기는 버튼 -->
+        <div class="img_btn">
+          <div class="left">
+          <img src="./free-icon-left-arrow-line-symbol-54321.png" alt="">
+        </div>
+        <div class="rigt">
+          <img src="./free-icon-chevron-6367846.png" alt="">
+        </div>
+      </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- article Category 영역 -->
+    <article class="article_content_wrap">
+      <h2 class="article_title">인기 카테고리</h2>
+      <section class="article_content_box">
+
+        <div class="article_1">
+          <div class="img-wrap">
+            <span class="img_after"></span>
+            <img
+              src="https://dnvefa72aowie.cloudfront.net/origin/etc/202403/d29808aa01c0a41269248321a456abe2abe0c66e390dd54cc3db0faa50bf8c4b.png"
+              alt=""
+            />
+          </div>
+          <div class="img-title">디지털 기기</div>
+        </div>
+
+        <div class="article_1">
+          <div class="img-wrap">
+            <span class="img_after"></span>
+            <img
+              src="https://dnvefa72aowie.cloudfront.net/origin/etc/202403/8999c0c18e64026e11b7859fcd1ca85142b8de45ba6c29b8d886c2841d7a2eaa.png"
+              alt=""
+            />
+          </div>
+          <div class="img-title">생활가전</div>
+        </div>
+
+        <div class="article_1">
+          <div class="img-wrap">
+            <span class="img_after"></span>
+            <img
+              src="https://dtxw8q4qct0d4.cloudfront.net/origin/etc/202307/7bb08256f1f87ac704907ee82a03201e6c4a3e668d71ef44d4129b30ccb3dfcf.png"
+              alt=""
+            />
+          </div>
+          <div class="img-title">가구/인테리어</div>
+        </div>
+
+        <div class="article_1">
+          <div class="img-wrap">
+            <span class="img_after"></span>
+            <img
+              src="https://dnvefa72aowie.cloudfront.net/origin/etc/202403/5db61d75ec51aefb77820d293491594d53ca63ab1ade5d7a154f1f51b678d1e2.png"
+              alt=""
+            />
+          </div>
+          <div class="img-title">생활/주방</div>
+        </div>
+
+        <div class="article_1">
+          <div class="img-wrap">
+            <span class="img_after"></span>
+            <img
+              src="https://dnvefa72aowie.cloudfront.net/origin/etc/202403/e3f9aeef2cc1efb65bd139c125a4983d552d62aca69eb16f8349b36bcaa17d62.png"
+              alt=""
+            />
+          </div>
+          <div class="img-title">유아봉</div>
+        </div>
+
+        <div class="article_1">
+          <div class="img-wrap">
+            <span class="img_after"></span>
+            <img
+              src="https://dnvefa72aowie.cloudfront.net/origin/etc/202403/4c69e8c4c4598e5b23a1fba1a821a830cbd830702b533d3a85ae14aa22a62e5c.png"
+              alt=""
+            />
+          </div>
+          <div class="img-title">유아도서</div>
+        </div>
+
+        <div class="article_1">
+          <div class="img-wrap">
+            <span class="img_after"></span>
+            <img
+            src="https://dtxw8q4qct0d4.cloudfront.net/origin/etc/202307/fffafa3aec1d4e1bf2454e2ff08f7930ae465e3b84eb1436109edbfac2ed754b.png"
+              alt=""
+            />
+          </div>
+          <div class="img-title">여성의류</div>
+        </div>
+
+        <div class="article_1">
+          <div class="img-wrap">
+            <span class="img_after"></span>
+            <img
+            src="https://dnvefa72aowie.cloudfront.net/origin/etc/202403/0f027dc5447cad28a8f7e2099aceddbfff33983095d74656688d86584de306b9.png"
+              alt=""
+            />
+          </div>
+          <div class="img-title">여성잡화</div>
+        </div>
+
+        <div class="article_1">
+          <div class="img-wrap">
+            <span class="img_after"></span>
+            <img
+            src="https://dnvefa72aowie.cloudfront.net/origin/etc/202403/5ee0336ba4a336ac3753f91e0cdd4a7e40d48d4045c01cbd2863fc29f9ba807c.png"
+              alt=""
+            />
+          </div>
+          <div class="img-title">남성패션/잡화</div>
+        </div>
+
+        <div class="line_g">
+          <span></span>
+        </div>
+        <div class="hover_img">
+          <img src="./right-arrow.png" alt="화살표">
+        </div>
+      </section>
+    </article>
+
+    <!-- download 영역 -->
+    <article class="article_2">
+      <section class="article_content_wrap_2">
+        <div class="article_title_1">
+          <div class="article_title_1_text">
+            당근에서 가까운 이웃과 함께해요.
+          </div>
+          <div class="article_title_1_text_2">지금 바로 다운로드하기</div>
+          <div class="store_img_wrap">
+            <a href="">
+              <img
+                class="a1nvr4c _588sy47k _588sy47t"
+                src="https://karrotmarket-com-sanity-cdn.krrt.io/production/49380c1c7e70e49f0f93baf0f790925eefc69082-120x40.svg"
+                alt="Download on the App Store"
+                srcset="
+                  https://karrotmarket-com-sanity-cdn.krrt.io/production/49380c1c7e70e49f0f93baf0f790925eefc69082-120x40.svg?q=82&amp;w=768    576w,
+                  https://karrotmarket-com-sanity-cdn.krrt.io/production/49380c1c7e70e49f0f93baf0f790925eefc69082-120x40.svg?q=95&amp;w=1200  1200w,
+                  https://karrotmarket-com-sanity-cdn.krrt.io/production/49380c1c7e70e49f0f93baf0f790925eefc69082-120x40.svg?q=100&amp;w=1400 1400w
+                "
+                sizes="(min-width:1200px) 1400px, (min-width:992px) 1200px, 576px"
+              />
+            </a>
+            <a href="">
+              <img
+                class="a1nvr4c _588sy47k _588sy47t"
+                src="https://karrotmarket-com-sanity-cdn.krrt.io/production/0d8f72b8e4cdb98af115a7c1f04c4abf19f5c419-180x53.svg"
+                alt="Get it on Google Play"
+                srcset="
+                  https://karrotmarket-com-sanity-cdn.krrt.io/production/0d8f72b8e4cdb98af115a7c1f04c4abf19f5c419-180x53.svg?q=82&amp;w=768    576w,
+                  https://karrotmarket-com-sanity-cdn.krrt.io/production/0d8f72b8e4cdb98af115a7c1f04c4abf19f5c419-180x53.svg?q=95&amp;w=1200  1200w,
+                  https://karrotmarket-com-sanity-cdn.krrt.io/production/0d8f72b8e4cdb98af115a7c1f04c4abf19f5c419-180x53.svg?q=100&amp;w=1400 1400w
+                "
+                sizes="(min-width:1200px) 1400px, (min-width:992px) 1200px, 576px"
+              />
+            </a>
+          </div>
+          <div>
+            <div class="mobile_img_wrap">
+              <img
+                class="box_shadow m_img m_img_1"
+                src="https://karrotmarket-com-sanity-cdn.krrt.io/production/4ea3e2339b23735cb15efb158f82232b23f9699c-507x780.png?q=95&w=1200"
+                alt=""
+              />
+              <img
+                class="m_img m_img_3"
+                src="https://karrotmarket-com-sanity-cdn.krrt.io/production/eb5447fcbdc44cec7dd057ac61a48ebbbbde3f5f-798x298.png?q=95&w=1200"
+                alt=""
+              />
+              <img
+                class="box_shadow m_img m_img_2 mobile_img_1"
+                src="https://karrotmarket-com-sanity-cdn.krrt.io/production/79e53025466ed586e7acd4a6545a3ca41f815412-507x1080.png?q=95&w=1200"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </article>
+
+    <!-- footer 영역 -->
+    <footer>
+      <div class="footer_content_wrap">
+        <div class="footer_content_box">
+          <div class="footer_1">
+            <div class="footer_icons">
+              <div class="img_wrap">
+                <img class="logo" src="./img/logo.svg" alt="로고" />
+              </div>
+            <div class="iocns">
+              <a href="">
+                <img src="./img/facebook.png" alt="페이스북" />
+              </a>
+              <a href="">
+                <img src="./img/instagram.png" alt="인스타그램" />
+              </a>
+              <a href="">
+                <img src="./img/youtube.png" alt="유튜브" />
+              </a>
+            </div>
+            </div>
+            <div class="grid_wrap">
+            <div class="company">
+              <strong class="title_text">회사</strong>
+              <span class="sub_text">회사 소개</span>
+              <span class="sub_text">당근페이</span>
+              <span class="sub_text">팀문화</span>
+              <span class="sub_text">서비스 소개</span>
+              <span class="sub_text">블로그</span>
+              <span class="sub_text">채용</span>
+            </div>
+
+            <div class="quest">
+              <strong class="title_text">탐색</strong>
+              <span class="sub_text">중고거래</span>
+              <span class="sub_text">부동산</span>
+              <span class="sub_text">중고차</span>
+              <span class="sub_text">알바</span>
+              <span class="sub_text">동네업체</span>
+              <span class="sub_text">모임</span>
+              <span class="sub_text">채팅하기</span>
+              <span class="sub_text">이웃</span>
+            </div>
+
+            <div class="business">
+              <strong class="title_text">비즈니스</strong>
+              <span class="sub_text">당근 비즈니스</span>
+              <span class="sub_text">제휴 문의</span>
+              <span class="sub_text">광고문의</span>
+            </div>
+
+            <div class="karrot">
+              <strong class="title_text">Karrot</strong>
+              <span class="sub_text">Canada
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-seed-icon="true" data-seed-icon-version="0.4.0-beta.2" width="14" height="14" class="_588sy411w">
+                  <g>
+                  <path d="M19.2072 5.18033C19.1631 5.10123 19.1075 5.02684 19.0403 4.95964C18.8399 4.7593 18.5757 4.66174 18.3132 4.66695L7 4.66691C6.44772 4.66691 6 5.11462 6 5.66691C5.99999 6.21919 6.44771 6.66691 6.99999 6.66691L15.9188 6.66694L4.9594 17.6263C4.56887 18.0168 4.56887 18.65 4.9594 19.0405C5.34992 19.431 5.98309 19.431 6.37361 19.0405L17.3334 8.08076V17.0002C17.3334 17.5525 17.7811 18.0002 18.3334 18.0002C18.8856 18.0002 19.3334 17.5525 19.3334 17.0002V5.66695C19.3334 5.4903 19.2876 5.32435 19.2072 5.18033Z" fill="currentColor">
+                  </path>
+                </g>
+                </svg>
+              </span>
+              <span class="sub_text">United Stated
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-seed-icon="true" data-seed-icon-version="0.4.0-beta.2" width="14" height="14" class="_588sy411w">
+                  <g>
+                  <path d="M19.2072 5.18033C19.1631 5.10123 19.1075 5.02684 19.0403 4.95964C18.8399 4.7593 18.5757 4.66174 18.3132 4.66695L7 4.66691C6.44772 4.66691 6 5.11462 6 5.66691C5.99999 6.21919 6.44771 6.66691 6.99999 6.66691L15.9188 6.66694L4.9594 17.6263C4.56887 18.0168 4.56887 18.65 4.9594 19.0405C5.34992 19.431 5.98309 19.431 6.37361 19.0405L17.3334 8.08076V17.0002C17.3334 17.5525 17.7811 18.0002 18.3334 18.0002C18.8856 18.0002 19.3334 17.5525 19.3334 17.0002V5.66695C19.3334 5.4903 19.2876 5.32435 19.2072 5.18033Z" fill="currentColor">
+                  </path>
+                </g>
+                </svg>
+              </span>
+              <span class="sub_text">United Kingdom
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-seed-icon="true" data-seed-icon-version="0.4.0-beta.2" width="14" height="14" class="_588sy411w">
+                  <g>
+                  <path d="M19.2072 5.18033C19.1631 5.10123 19.1075 5.02684 19.0403 4.95964C18.8399 4.7593 18.5757 4.66174 18.3132 4.66695L7 4.66691C6.44772 4.66691 6 5.11462 6 5.66691C5.99999 6.21919 6.44771 6.66691 6.99999 6.66691L15.9188 6.66694L4.9594 17.6263C4.56887 18.0168 4.56887 18.65 4.9594 19.0405C5.34992 19.431 5.98309 19.431 6.37361 19.0405L17.3334 8.08076V17.0002C17.3334 17.5525 17.7811 18.0002 18.3334 18.0002C18.8856 18.0002 19.3334 17.5525 19.3334 17.0002V5.66695C19.3334 5.4903 19.2876 5.32435 19.2072 5.18033Z" fill="currentColor">
+                  </path>
+                </g>
+                </svg>
+              </span>
+              <span class="sub_text">日本
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-seed-icon="true" data-seed-icon-version="0.4.0-beta.2" width="14" height="14" class="_588sy411w">
+                  <g>
+                  <path d="M19.2072 5.18033C19.1631 5.10123 19.1075 5.02684 19.0403 4.95964C18.8399 4.7593 18.5757 4.66174 18.3132 4.66695L7 4.66691C6.44772 4.66691 6 5.11462 6 5.66691C5.99999 6.21919 6.44771 6.66691 6.99999 6.66691L15.9188 6.66694L4.9594 17.6263C4.56887 18.0168 4.56887 18.65 4.9594 19.0405C5.34992 19.431 5.98309 19.431 6.37361 19.0405L17.3334 8.08076V17.0002C17.3334 17.5525 17.7811 18.0002 18.3334 18.0002C18.8856 18.0002 19.3334 17.5525 19.3334 17.0002V5.66695C19.3334 5.4903 19.2876 5.32435 19.2072 5.18033Z" fill="currentColor">
+                  </path>
+                </g>
+                </svg>
+              </span>
+            </div>
+
+              <div class="inquiry">
+                <strong class="title_text">문의</strong>
+                <span class="sub_text">IR</span>
+                <span class="sub_text">PR</span>
+                <span class="sub_text">고객센터</span>
+              </div>
+            </div>
+          </div>
+              <div class="hr"></div>
+
+              <!-- address 영역 -->
+              <div class="footer_title_wrap_top">
+                <div class="footer_title">
+                  <span class="font-b">(주) 당근마켓</span>
+                </div>
+                <div class="address_text_wrap">
+                  <div class="flex">
+                    <span class="font-b">대표</span>
+                    <span class="font">김용현, 황도연</span>
+                    <div class="line"></div>
+                    <div>
+                      <span class="font-b">사업자 번호</span>
+                      <span class="font">375-87-00088</span>
+                    </div>
+                  </div>
+                  <div class="flex">
+                    <span class="font-b">직업정보제공사업 신고번호</span>
+                    <span class="font">J12000020200016</span>
+                  </div>
+                  <div class="flex">
+                    <span class="font-b">통신판매업 신고번호</span>
+                    <span class="font">2021-서울서초-2875</span>
+                  </div>
+                  <div class="flex">
+                    <span class="font-b">호스팅 사업자</span>
+                    <span class="font">Amazon Web Service(AWS)</span>
+                  </div>
+                  <div class="flex">
+                    <span class="font-b">주소</span>
+                    <span class="font">서울특별시 구로구 디지털로 300, 10층 (당근서비스)</span>
+                  </div>
+                  <div class="flex">
+                    <span class="font-b">전화번호</span>
+                    <span class="font">1544-9796</span>
+                    <div class="line"></div>
+                    <div>
+                      <span class="font-b">고객문의</span>
+                      <span class="font">cs@daangnservice.com</span>
+                    </div>
+                  </div>
+                  
+                  <div class="address_text_wrpa_2">
+                    <a href="" class="font">이용약관</a>
+                    <a href="" class="font-b">개인정보처리방침</a>
+                    <a href="" class="font">운영정책</a>
+                    <a href="" class="font">위치기반서비스 이용약관</a>
+                    <a href="" class="font">이용자보호 비전과 계획</a>
+                    <a href="" class="font">청소년보호정책</a>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
